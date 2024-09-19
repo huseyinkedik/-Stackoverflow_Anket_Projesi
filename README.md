@@ -238,4 +238,5 @@ Bu proje, StackOverflow Anketi'ndeki katılımcıların deneyimleri, çalışma 
 - NumPy
 - Jupyter Notebook
 
-Proje dosyasına ve Jupyter Notebook içeriğine [buradan](link_to_your_notebook) ulaşabilirsiniz.
+Proje dosyasına ve Jupyter Notebook içeriğine [buradan](https://github.com/huseyinkedik/-Stackoverflow_Anket_Projesi/blob/main/Stackoverflow_Anket_Projesi.ipynb) ulaşabilirsiniz.
+Stackoverflow Anketi 2024 anket sonuçlarını [buradan](https://insights.stackoverflow.com/survey) indirebilirsin.
