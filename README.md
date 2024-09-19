@@ -200,25 +200,29 @@ Son olarak, `.reset_index()` kodu, `value_counts()` sonucunda oluşan seriyi bir
 Bu kod parçasının çıktısı, uzaktan çalışan ve en yüksek yıllık tazminat diliminde bulunan katılımcıların hangi endüstrilerde çalıştığını ve bu endüstrilerin ne kadar yaygın olduğunu gösterir. Bu tür bir analiz, tazminat ve çalışma biçimi gibi faktörlere göre endüstri dağılımlarını anlamak için faydalıdır. 
 
    ```python
-   df[(df.ConvertedCompYearly > df.ConvertedCompYearly.quantile(0.75)) & (df.RemoteWork == 'Remote')].Industry.value_counts().reset_index()
-
-   # 	Industry	                                    count
-   0	Software Development	                        768
-   1	Other:	                                    239
-   2	Healthcare	                                 156
-   3	Fintech	                                    156
-   4	Internet, Telecomm or Information Services	145
-   5	Retail and Consumer Services	               106
-   6	Media & Advertising Services	               103
-   7	Banking/Financial Services                  	69
-   8	Government	                                 69
-   9	Computer Systems Design and Services	      69
-   10	Transportation, or Supply Chain	            67
-   11	Insurance	                                 50
-   12	Manufacturing	                              48
-   13	Higher Education	                           42
-   14	Energy	                                    36
+      df[(df.ConvertedCompYearly > df.ConvertedCompYearly.quantile(0.75)) & (df.RemoteWork == 'Remote')].Industry.value_counts().reset_index()
    ```
+   
+   Industry                                     | Count
+   --------------------------------------------|-------
+   Software Development                        | 768
+   Other                                       | 239
+   Healthcare                                  | 156
+   Fintech                                     | 156
+   Internet, Telecomm or Information Services  | 145
+   Retail and Consumer Services                | 106
+   Media & Advertising Services                | 103
+   Banking/Financial Services                  | 69
+   Government                                  | 69
+   Computer Systems Design and Services        | 69
+   Transportation, or Supply Chain             | 67
+   Insurance                                   | 50
+   Manufacturing                               | 48
+   Higher Education                            | 42
+   Energy                                      | 36
+   
+
+   
         
 ## Proje Çıktıları
 
